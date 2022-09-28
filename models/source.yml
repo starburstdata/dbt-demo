@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: customersdb
+    database: customersdb
+    schema: public
+    tables:
+      - name: customers
+  - name: paymentsdb
+    database: paymentsdb
+    schema: public
+    tables:
+      - name: payments
+  - name: ordersdb
+    database: ordersdb
+    schema: public
+    tables:
+      - name: orders
