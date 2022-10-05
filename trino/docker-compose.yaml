@@ -3,15 +3,16 @@ version: "3.9"
 services:
   trino:
     hostname: trino
+    container_name: trino
     image: 'trinodb/trino:latest'
     ports:
       - '8080:8080'
     volumes:
-      - ./trino/etc:/usr/lib/trino/etc:ro
       - ./trino/catalog:/etc/trino/catalog
 
   customersdb:
     image: postgres:10
+    container_name: customersdb
     volumes:
       - ./customersdb/init-customers.sql:/docker-entrypoint-initdb.d/init.sql
       - ./customersdb/raw_customers.csv:/home/dump/raw_customers.csv
@@ -24,6 +25,7 @@ services:
 
   ordersdb:
     image: postgres:10
+    container_name: ordersdb
     volumes:
       - ./ordersdb/init-orders.sql:/docker-entrypoint-initdb.d/init.sql
       - ./ordersdb/raw_orders.csv:/home/dump/raw_orders.csv
@@ -36,6 +38,7 @@ services:
 
   paymentsdb:
     image: postgres:10
+    container_name: paymentsdb
     volumes:
       - ./paymentsdb/init-payments.sql:/docker-entrypoint-initdb.d/init.sql
       - ./paymentsdb/raw_payments.csv:/home/dump/raw_payments.csv
@@ -49,12 +52,14 @@ services:
   metastore_db:
     image: postgres:11
     hostname: metastore_db
+    container_name: metastore_db
     environment:
       POSTGRES_USER: hive
       POSTGRES_PASSWORD: hive
       POSTGRES_DB: metastore
 
   hive-metastore:
+    container_name: hive-metastore
     hostname: hive-metastore
     image: 'starburstdata/hive:3.1.2-e.15'
     ports:
@@ -101,6 +106,7 @@ services:
   # This job will create the "datalake" bucket on Minio
   mc-job:
     image: 'minio/mc:RELEASE.2022-05-09T04-08-26Z'
+    container_name: mc-job
     entrypoint: |
       /bin/bash -c "
       sleep 5;
