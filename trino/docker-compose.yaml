@@ -23,32 +23,6 @@ services:
     ports:
       - "15432:5432"
 
-  ordersdb:
-    image: postgres:10
-    container_name: ordersdb
-    volumes:
-      - ./ordersdb/init-orders.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./ordersdb/raw_orders.csv:/home/dump/raw_orders.csv
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - "25432:5432"
-
-  paymentsdb:
-    image: postgres:10
-    container_name: paymentsdb
-    volumes:
-      - ./paymentsdb/init-payments.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./paymentsdb/raw_payments.csv:/home/dump/raw_payments.csv
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - "35432:5432"
-
   metastore_db:
     image: postgres:11
     hostname: metastore_db
@@ -116,19 +90,14 @@ services:
     depends_on:
       - minio
 
-  elastic:
-    image: docker.elastic.co/elasticsearch/elasticsearch:8.4.2
-    hostname: elasticsearch
-    container_name: elasticsearch
+  mongodb:
+    image: 'mongo:latest'
+    hostname: mongodb
+    container_name: mongodb
     ports:
-      - '9200:9200'
-      - '9300:9300'
+      - '27017:27017'
     volumes:
-      - ./elastic-data:/usr/share/elasticsearch/data
-    environment:
-      - xpack.security.enabled=false
-      - discovery.type=single-node
-      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - ./mongodb/database:/data/db
 
 volumes:
   data01:
