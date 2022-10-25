@@ -892,7 +892,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-24T05:47:58.961Z",
     "page": "https://jaffleshop.com",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=4"
   },
   {
     "visitorId": "b003336c-4bbe-488b-8885-3ade34ca8c64",
@@ -1774,7 +1774,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-18T21:17:55.515Z",
     "page": "https://jaffleshop.com/product/c",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=4"
   },
   {
     "visitorId": "c0568190-bfa5-4333-8fa2-c501a9548beb",
@@ -5365,7 +5365,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-07T14:11:24.691Z",
     "page": "https://jaffleshop.com/product/b",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=3"
   },
   {
     "visitorId": "279a91ae-b19e-4020-b466-3fae68ad23d0",
@@ -7066,7 +7066,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-02T15:14:39.820Z",
     "page": "https://jaffleshop.com/contact",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=1"
   },
   {
     "visitorId": "c650f501-eb4a-46da-bbfe-cad3fd9fb10c",
@@ -9415,7 +9415,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-29T13:12:35.725Z",
     "page": "https://jaffleshop.com/product/b",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "4eedbf53-fde9-4207-a3a6-fc8fc1454e06",
@@ -9937,7 +9937,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-05T03:55:36.854Z",
     "page": "https://jaffleshop.com/returns",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=3"
   },
   {
     "visitorId": "8f19f0ce-9495-4c0e-9fcb-9f7da23ee717",
@@ -12952,7 +12952,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-12T09:59:31.593Z",
     "page": "https://jaffleshop.com/product/c",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=25_40"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "f9184868-803b-4ca4-969f-568ba182b6bc",
@@ -15337,7 +15337,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-14T23:34:22.470Z",
     "page": "https://jaffleshop.com",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=4"
   },
   {
     "visitorId": "4f29c6d4-3a71-4d61-8a71-f8353cb25e99",
@@ -17281,7 +17281,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-04T17:09:28.284Z",
     "page": "https://jaffleshop.com/search",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=5"
   },
   {
     "visitorId": "7ca016d4-be64-43c9-b273-9ef68b67cded",
@@ -17542,7 +17542,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-25T23:22:55.476Z",
     "page": "https://jaffleshop.com/product/a",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=3"
   },
   {
     "visitorId": "38f7e1d7-afcc-47f4-a50f-531e4fc8efba",
@@ -21205,7 +21205,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-21T15:24:18.263Z",
     "page": "https://jaffleshop.com/returns",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "9d4bd40f-abfd-4dae-9825-1df386c884c2",
@@ -24220,7 +24220,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-09T15:16:58.168Z",
     "page": "https://jaffleshop.com/product/d",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=5"
   },
   {
     "visitorId": "13a6d001-f9f1-41d3-849a-3f717fae476d",
@@ -26506,7 +26506,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-18T00:46:01.420Z",
     "page": "https://jaffleshop.com/product/b",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=3"
   },
   {
     "visitorId": "17ea0074-ec39-4e10-9d36-d6f93cb8f3fd",
@@ -28351,7 +28351,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-19T00:54:44.398Z",
     "page": "https://jaffleshop.com",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "28aaa86f-5840-46f3-b1cd-7b90332706df",
@@ -29071,7 +29071,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-10T05:32:51.474Z",
     "page": "https://jaffleshop.com/product/b",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=25_40"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=3"
   },
   {
     "visitorId": "28aaa86f-5840-46f3-b1cd-7b90332706df",
@@ -32743,7 +32743,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-14T10:52:28.545Z",
     "page": "https://jaffleshop.com/product/b",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=5"
   },
   {
     "visitorId": "3ae4fd69-bade-485f-a0ef-1c8ef501b579",
@@ -45721,7 +45721,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-28T23:10:23.605Z",
     "page": "https://jaffleshop.com/product/c",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "2ad5845d-6722-4774-a9bb-fd0403200368",
@@ -48367,7 +48367,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-30T09:54:24.075Z",
     "page": "https://jaffleshop.com/product/d",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=1"
   },
   {
     "visitorId": "86e943f7-e664-4c40-9612-656ddc2f281b",
@@ -57079,7 +57079,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-13T14:53:38.002Z",
     "page": "https://jaffleshop.com/product/c",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=25_40"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "1da1d2cc-e131-48ea-a746-007b6eadeb30",
@@ -59662,7 +59662,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-08T10:45:37.300Z",
     "page": "https://jaffleshop.com/product/c",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=4"
   },
   {
     "visitorId": "11fa9a71-1318-436e-8462-f5697e312577",
@@ -61633,7 +61633,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-15T22:05:36.354Z",
     "page": "https://jaffleshop.com/returns",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=25_40"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=1"
   },
   {
     "visitorId": "85544d5f-744a-4f9b-8111-6804b1c888d8",
@@ -62785,7 +62785,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-08T07:16:21.042Z",
     "page": "https://jaffleshop.com",
-    "referrer": "https://app.facebook.com/?utm_source=instagram&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=instagram&utm_medium=social&utm_campaign=1"
   },
   {
     "visitorId": "2d1ddf9b-5f52-4169-b6b8-03875b15d8c8",
@@ -63235,7 +63235,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-03T00:55:01.125Z",
     "page": "https://jaffleshop.com/search",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=25_40"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=1"
   },
   {
     "visitorId": "2d1ddf9b-5f52-4169-b6b8-03875b15d8c8",
@@ -67987,7 +67987,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-29T13:32:56.190Z",
     "page": "https://jaffleshop.com/product/c",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=4"
   },
   {
     "visitorId": "8f0c4195-712c-4265-b24e-cf32550fabc4",
@@ -69355,7 +69355,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-03-10T18:13:59.934Z",
     "page": "https://jaffleshop.com",
-    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=18_24"
+    "referrer": "https://app.facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=2"
   },
   {
     "visitorId": "d6de43de-8003-4fe7-94d5-fe8c11aeb4de",
@@ -77347,7 +77347,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-04-10T14:12:02.374Z",
     "page": "https://jaffleshop.com/search",
-    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=41_60"
+    "referrer": "https://instagram.com/?utm_source=instagram&utm_medium=social&utm_campaign=3"
   },
   {
     "visitorId": "4e5fb5f6-83dc-47bd-9428-257e09b6ad20",
@@ -78841,7 +78841,7 @@ const clicks = [
     "event": "pageView",
     "eventTime": "2018-02-11T02:15:49.994Z",
     "page": "https://jaffleshop.com/search",
-    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=25_40"
+    "referrer": "https://facebook.com/?utm_source=facebook&utm_medium=social&utm_campaign=1"
   },
   {
     "visitorId": "d9022827-4e9d-40ba-bc60-805d1cf3f893",
