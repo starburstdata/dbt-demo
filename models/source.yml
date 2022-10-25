@@ -1,18 +1,16 @@
 version: 2
 
 sources:
-  - name: customersdb
-    database: customersdb
+  - name: webshop
+    database: webshop
     schema: public
     tables:
       - name: customers
-  - name: paymentsdb
-    database: paymentsdb
-    schema: public
-    tables:
-      - name: payments
-  - name: ordersdb
-    database: ordersdb
-    schema: public
-    tables:
       - name: orders
+      - name: payments
+      - name: sessions
+  - name: website
+    database: website
+    schema: clickstream
+    tables:
+      - name: clicks

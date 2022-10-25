@@ -14,17 +14,19 @@ profile: 'my_dbt_trino_project'
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
 model-paths: ["models"]
-analysis-paths: ["analyses"]
-test-paths: ["tests"]
 seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
 macro-paths: ["macros"]
-snapshot-paths: ["snapshots"]
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
+  - "logs"
 
+
+require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -34,4 +36,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   my_dbt_trino_project:
-    +dbt-osmosis: "schema.yml"
+    +materialized: table
+    stage:
+      +materialized: view
+
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ['trino_utils', 'dbt_utils']

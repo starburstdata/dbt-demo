@@ -1,6 +1,35 @@
 version: "3.9"
    
 services:
+
+  jaffle_webshop:
+    image: postgres:11
+    container_name: jaffle_webshop
+    volumes:
+      - ./jaffle_webshop/init-customers.sql:/docker-entrypoint-initdb.d/init-customers.sql
+      - ./jaffle_webshop/raw_customers.csv:/home/dump/raw_customers.csv
+      - ./jaffle_webshop/init-payments.sql:/docker-entrypoint-initdb.d/init-payments.sql
+      - ./jaffle_webshop/raw_payments.csv:/home/dump/raw_payments.csv
+      - ./jaffle_webshop/init-orders.sql:/docker-entrypoint-initdb.d/init-orders.sql
+      - ./jaffle_webshop/raw_orders.csv:/home/dump/raw_orders.csv
+      - ./jaffle_webshop/init-sessions.sql:/docker-entrypoint-initdb.d/init-sessions.sql
+      - ./jaffle_webshop/raw_sessions.csv:/home/dump/raw_sessions.csv
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "15432:5432"
+
+  mongodb:
+    image: 'mongo:latest'
+    hostname: mongodb
+    container_name: mongodb
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./click_stream/initdb.js:/docker-entrypoint-initdb.d/initdb.js
+
   trino:
     hostname: trino
     container_name: trino
@@ -8,20 +37,7 @@ services:
     ports:
       - '8080:8080'
     volumes:
-      - ./trino/catalog:/etc/trino/catalog
-
-  customersdb:
-    image: postgres:10
-    container_name: customersdb
-    volumes:
-      - ./customersdb/init-customers.sql:/docker-entrypoint-initdb.d/init.sql
-      - ./customersdb/raw_customers.csv:/home/dump/raw_customers.csv
-    environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - "15432:5432"
+      - ./catalog:/etc/trino/catalog
 
   metastore_db:
     image: postgres:11
@@ -89,15 +105,6 @@ services:
       "
     depends_on:
       - minio
-
-  mongodb:
-    image: 'mongo:latest'
-    hostname: mongodb
-    container_name: mongodb
-    ports:
-      - '27017:27017'
-    volumes:
-      - ./mongodb/database:/data/db
 
 volumes:
   data01:
