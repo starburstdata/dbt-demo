@@ -37,8 +37,11 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 models:
   my_dbt_trino_project:
     +materialized: table
+    source:
+      schema: source
     stage:
       +materialized: view
+      schema: stage
 
 dispatch:
   - macro_namespace: dbt_utils
