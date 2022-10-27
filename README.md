@@ -1,1 +1,4 @@
-TODO: remove README.md from docker folder and add here only information about the project and link to article
+# dbt-trino Starburst blog demo
+
+The repository contains demo assets of dbt + Trino blog post which is available on Starburst blog.
+TODO: add link to post after publishing
