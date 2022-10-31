@@ -1,7 +1,7 @@
 select
 
     cookie_id,
-    first_value(customer_id) ignore nulls over (
+    last_value(customer_id) ignore nulls over (
         partition by cookie_id order by session_started asc rows between unbounded preceding and current row
     ) as customer_id,
     session_started,

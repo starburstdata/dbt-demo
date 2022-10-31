@@ -28,6 +28,7 @@ final as (
         orders.order_date,
         orders.status,
         order_payments.total_amount as amount,
+        channels.campaign_id,
         channel,
         country,
         age_group

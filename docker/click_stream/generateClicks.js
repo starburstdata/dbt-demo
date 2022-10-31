@@ -3,7 +3,7 @@ const fs = require("fs");
 const faker = require("@faker-js/faker");
 const { v4: uuidv4 } = require('uuid');
 
-const records = csv.parse(fs.readFileSync("/Users/michieldesmet/src/starburst/dbt_demo/trino/jaffle_webshop/raw_orders.csv"), {
+const records = csv.parse(fs.readFileSync("../jaffle_webshop/raw_orders.csv"), {
   columns: true,
   skip_empty_lines: true
 });
@@ -24,18 +24,13 @@ const randomDate = (start, end) => {
 }
 const randomNumber = (max) => Math.floor(Math.random() * max);
 
-const randomPath = () => {
-  const templates = [
-    "category/a",
-    "/blog/test",
-    "index.php",
-    ""
-
-  ]
-}
-
 const randomCampaign = () => {
-
+  while(true) {
+    let num = randomNumber(5);
+    if (num != 0) {
+      return num;
+    }
+  }
 }
 
 const startDate = new Date(2018, 1, 1);
@@ -93,8 +88,13 @@ const createRandomClick = (user, page, referrer, eventTime) => {
 }
 
 const simulateVisit = (user, date) => {
-  const numClicks = randomNumber(100);
+  const numClicks = randomNumber(20);
   let referrer = randomArrayEntry(referrers);
+  if (randomNumber(1) == 0 ) {
+    if (referrer.includes("facebook") || referrer.includes("instagram")) {
+      referrer += "?utm_source=media&utm_medium=social&utm_campaign=" + randomCampaign();
+    }
+  }
   if (randomNumber(10) < 3) {
     referrer = ""
   }
@@ -132,7 +132,7 @@ const createUsers = () => {
   return users;
 }
 const users = createUsers();
-const clicks = [];
+let clicks = [];
 const sessions = [];
 
 for (let i = 0; i < 100; i++) {
@@ -143,10 +143,10 @@ for (let i = 0; i < 100; i++) {
   for (let j = 0; j < numVisits; j++) {
     dates.push(randomDate(startDate, endDate));
   }
-  dates.push.apply(user.orderDates);
+  dates.push(...user.orderDates);
   dates.sort();
   for (let j = 0; j < dates.length; j++) {
-    clicks.push.apply(simulateVisit(user, dates[j]));
+    simulateVisit(user, dates[j]);
   }
 }
 
