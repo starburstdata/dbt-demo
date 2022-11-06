@@ -1,6 +1,6 @@
-
-target/
-dbt_packages/
-logs/
+dbt-trino/target/
+dbt-trino/dbt_packages/
+dbt-trino/logs/
 node_modules
 .idea
+venv/
