@@ -1,4 +1,4 @@
-from dagster import job
+from dagster import job, graph
 from dagster_dbt import dbt_seed_op, dbt_run_op, dbt_test_op, dbt_cli_resource
 from dbt_dagster.assets import DBT_PROJECT_PATH
 

@@ -1,0 +1,12 @@
+{
+  "base64Signature": "J2AKxqUzYePY7vsZE8KpGLZ7ayPjOTtfwFIpCyxe6BIqcihrsJ/5ru3XVMAG8W6aC2t11/mrJiqXMe+/+XyrPfjsb5GLZ2vLTflez4z/S4/nhpCSSuER1aYD1eHlIXRihTJvMGDOH63qNMtSmt8zAh5LD4evUisjiksTOyr7R8M1zsDvkP69UBXOvHdi+gV9ZveWldS8+NTSJ83+BZrfLg4TNbZcTw8uFn9uxVHUEPqkt7T9aKFSbq10XjFOTHljDl64g5G3cBF9OsY4keUtSaDJZW4t6knrJROdG6COTuLt6y3gavlE/xnh+POjRF3lyMoA2Qd3GlvtElRa/bTe2EiPevlaCEMHHqEzDOH9TiCaVsVjENTfxvV9xl2xapaSoJUvlDWuZgTGhqo0QgRlXseEJdXxxUqKTInz9UuUVxXnQXcSYm40mTPA4/aYDOafGi1vUx/n5WirYiQpZprDQbHVkSe7+J/YmRaJVx0zl/e2VqtVJPzSUfk87MApStKbWKAVr/+lsPF+iNx6sz2qPRcaTmw2OXtBjt0OFqT9BqIuEDefSdkXc8MbuC7c/QkzOBhXs1LDUkngXLkSnG5yMSMa0dIYuhl/9D3vxu+yoYCpBch0Ka5gLgIUiz+9jSjc/o2yzLlW1lyb962DzKl48ziNTicQEbaJpdAFziyCNqM=",
+  "expiry": "2025-01-01T00:00:00",
+  "features": [
+    "*",
+    "salesforce",
+    "dynamodb",
+    "splunk",
+    "stargate"
+  ],
+  "owner": "Starburst Development"
+}

@@ -33,11 +33,12 @@ services:
   trino:
     hostname: trino
     container_name: trino
-    image: 'trinodb/trino:latest'
+    image: "starburstdata/starburst-enterprise:402-e.0"
     ports:
       - '8080:8080'
     volumes:
-      - ./catalog:/etc/trino/catalog
+      - ./starburst/etc:/etc/starburst
+      - ./catalog:/etc/starburst/catalog
 
   metastore_db:
     image: postgres:11
