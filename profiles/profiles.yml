@@ -1,0 +1,11 @@
+my_dbt_trino_project:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      method: none
+      user: admin
+      host: localhost
+      port: 8080
+      catalog: iceberg
+      schema: default

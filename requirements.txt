@@ -1,0 +1,4 @@
+dagster-dbt==0.18.3
+dbt-core==1.4.5
+dbt-duckdb==1.4.1
+dbt-trino==1.4.1

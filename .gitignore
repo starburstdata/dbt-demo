@@ -4,3 +4,5 @@ dbt-trino/logs/
 node_modules
 .idea
 venv/
+.dbt
+.user.yml
